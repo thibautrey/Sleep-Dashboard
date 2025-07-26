@@ -2,10 +2,10 @@
 
 This document lists the tasks required to implement the Sleep Dashboard project from start to finish.
 
-1. **Initial Setup**
-   - Initialize the repository with Node.js and TypeScript configuration.
-   - Configure ESLint, Prettier, and basic formatting scripts.
-   - Create a `src/` directory for server and client code.
+1. **Initial Setup** (completed)
+   - [x] Initialize the repository with Node.js and TypeScript configuration.
+   - [x] Configure ESLint, Prettier, and basic formatting scripts.
+   - [x] Create a `src/` directory for server and client code.
 
 2. **Docker Compose Environment**
    - Write a `docker-compose.yml` file with services for Postgres and the Node app.

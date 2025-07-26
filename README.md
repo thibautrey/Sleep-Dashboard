@@ -17,9 +17,13 @@ The project aims to provide a mobile-friendly dashboard where users can connect 
 ## Development
 
 1. Clone this repository.
-2. Install dependencies once the Node project is bootstrapped.
-3. Configure environment variables for Withings API credentials and database access.
-4. Use `docker compose up` to start the database and application services.
+2. Run `npm install` to install project dependencies.
+3. Use `npm run dev` to start the TypeScript server in development mode.
+4. Run `npm run build` to compile the project for production.
+5. Configure environment variables for Withings API credentials and database access.
+6. Use `docker compose up` to start the database and application services.
+
+Formatting and linting can be run with `npm run format` and `npm run lint`.
 
 This README will be expanded with setup and usage instructions as the project evolves.
 
