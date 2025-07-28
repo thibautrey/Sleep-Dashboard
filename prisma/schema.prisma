@@ -1,0 +1,32 @@
+// Prisma schema for Sleep Dashboard
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                  Int          @id @default(autoincrement())
+  email               String       @unique
+  name                String?
+  withingsAccessToken String?
+  withingsRefreshToken String?
+  withingsUserId      String?
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+  sleepRecords        SleepRecord[]
+}
+
+model SleepRecord {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    Int
+  startTime DateTime
+  endTime   DateTime
+  duration  Int
+  createdAt DateTime @default(now())
+}
