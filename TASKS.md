@@ -7,9 +7,9 @@ This document lists the tasks required to implement the Sleep Dashboard project 
    - [x] Configure ESLint, Prettier, and basic formatting scripts.
    - [x] Create a `src/` directory for server and client code.
 
-2. **Docker Compose Environment**
-   - Write a `docker-compose.yml` file with services for Postgres and the Node app.
-   - Provide a Dockerfile for the Node service.
+2. **Docker Compose Environment** (completed)
+   - [x] Write a `docker-compose.yml` file with services for Postgres and the Node app.
+   - [x] Provide a Dockerfile for the Node service.
 
 3. **Database Schema**
    - Define Prisma models for `User` and `SleepRecord`.

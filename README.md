@@ -23,6 +23,15 @@ The project aims to provide a mobile-friendly dashboard where users can connect 
 5. Configure environment variables for Withings API credentials and database access.
 6. Use `docker compose up` to start the database and application services.
 
+## Docker Compose Setup
+
+The `docker-compose.yml` file defines two services:
+
+- **db** – a PostgreSQL database with default credentials `sleep`/`sleep`.
+- **app** – builds the Node image from this repository and runs the compiled server.
+
+Run `docker compose up` to build the images and launch both services.
+
 Formatting and linting can be run with `npm run format` and `npm run lint`.
 
 This README will be expanded with setup and usage instructions as the project evolves.
