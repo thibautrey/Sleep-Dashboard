@@ -11,9 +11,9 @@ This document lists the tasks required to implement the Sleep Dashboard project 
    - [x] Write a `docker-compose.yml` file with services for Postgres and the Node app.
    - [x] Provide a Dockerfile for the Node service.
 
-3. **Database Schema**
-   - Define Prisma models for `User` and `SleepRecord`.
-   - Configure database connection and run initial migrations.
+3. **Database Schema** (completed)
+   - [x] Define Prisma models for `User` and `SleepRecord`.
+   - [x] Configure database connection and run initial migrations.
 
 4. **Withings API Integration**
    - Implement OAuth flow to obtain user authorization.
